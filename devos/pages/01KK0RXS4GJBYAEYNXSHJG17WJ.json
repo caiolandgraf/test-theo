@@ -1,0 +1,23 @@
+{
+  "id": "01KK0RXS4GJBYAEYNXSHJG17WJ",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": null,
+  "type": "meeting",
+  "title": "Meeting — Mar 2",
+  "slug": "meeting-mar-2-jg17wj",
+  "emoji": "📅",
+  "content": "<p>asdasddasdasd</p>",
+  "contentText": "asdasddasdasd",
+  "isPinned": false,
+  "isFavorite": false,
+  "isArchived": false,
+  "position": 11,
+  "depth": 0,
+  "tags": [],
+  "metadata": {
+    "date": "2026-03-02T03:00:00.000Z"
+  },
+  "createdAt": 1772773893264,
+  "updatedAt": 1772773897761,
+  "deletedAt": null
+}
