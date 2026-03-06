@@ -1,0 +1,23 @@
+{
+  "id": "01KK0H9RCSRYW7BZZVP5DT1ATC",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAPI_",
+  "parentId": null,
+  "number": 4,
+  "identifier": "API-4",
+  "title": "Gateway returns 503 instead of 502 on upstream timeout",
+  "status": "done",
+  "priority": "high",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELBUG"
+  ],
+  "estimate": 1,
+  "completedAt": 1772333897112,
+  "sortOrder": 3,
+  "metadata": {},
+  "createdAt": 1771815497112,
+  "updatedAt": 1772333897112,
+  "deletedAt": null
+}
