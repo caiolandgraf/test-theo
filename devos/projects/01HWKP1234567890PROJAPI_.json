@@ -1,0 +1,18 @@
+{
+  "id": "01HWKP1234567890PROJAPI_",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "name": "API Gateway",
+  "identifier": "API",
+  "description": "Central API gateway with rate limiting and routing",
+  "status": "active",
+  "color": "#10B981",
+  "iconEmoji": "🌐",
+  "pageId": null,
+  "leadId": null,
+  "startDate": 1768877897112,
+  "targetDate": 1777949897112,
+  "metadata": {},
+  "createdAt": 1768877897112,
+  "updatedAt": 1772679497112,
+  "deletedAt": null
+}
