@@ -1,0 +1,23 @@
+{
+  "id": "01HWKP1234567890PAGERFC0",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": null,
+  "type": "note",
+  "title": "RFCs",
+  "slug": "rfcs",
+  "emoji": "📝",
+  "content": "<h1>Request for Comments</h1><p>RFCs are for <strong>significant technical decisions that benefit from broader input</strong> before being finalized.</p><h2>Workflow</h2><pre spellcheck=\"false\"><code>Draft → In Review → Final\n                 ↘ Withdrawn\n</code></pre><p>@</p><p></p><h2>Active RFCs</h2><table style=\"min-width: 100px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>#</p></th><th colspan=\"1\" rowspan=\"1\"><p>Title</p></th><th colspan=\"1\" rowspan=\"1\"><p>Status</p></th><th colspan=\"1\" rowspan=\"1\"><p>Author</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"RFC-001\">RFC-001</a></p></td><td colspan=\"1\" rowspan=\"1\"><p>JWT Token Rotation Strategy</p></td><td colspan=\"1\" rowspan=\"1\"><p>Final</p></td><td colspan=\"1\" rowspan=\"1\"><p>@you</p></td></tr></tbody></table><h2>When to Write an RFC</h2><p>Write an RFC when:</p><ul><li><p>The change affects more than one service</p></li><li><p>The design has non-obvious trade-offs</p></li><li><p>You want async feedback before implementation</p></li><li><p>The change is irreversible (data model, protocol changes)</p></li></ul>",
+  "contentText": "Request for Comments  RFCs are for  significant technical decisions that benefit from broader input  before being finalized.  Workflow   Draft → In Review → Final\n                 ↘ Withdrawn\n   @    Active RFCs            #    Title    Status    Author       RFC-001     JWT Token Rotation Strategy    Final    @you      When to Write an RFC  Write an RFC when:    The change affects more than one service    The design has non-obvious trade-offs    You want async feedback before implementation    The change is irreversible (data model, protocol changes)",
+  "isPinned": false,
+  "isFavorite": false,
+  "isArchived": false,
+  "position": 2,
+  "depth": 0,
+  "tags": [
+    "architecture"
+  ],
+  "metadata": {},
+  "createdAt": 1771037897112,
+  "updatedAt": 1772770933474,
+  "deletedAt": null
+}
