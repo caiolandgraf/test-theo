@@ -1,0 +1,18 @@
+{
+  "id": "01HWKP1234567890PROJINFR",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "name": "Infrastructure",
+  "identifier": "INFRA",
+  "description": "Cloud infrastructure, CI/CD, and observability",
+  "status": "active",
+  "color": "#F59E0B",
+  "iconEmoji": "🏗️",
+  "pageId": null,
+  "leadId": null,
+  "startDate": 1764989897112,
+  "targetDate": 1780541897112,
+  "metadata": {},
+  "createdAt": 1764989897112,
+  "updatedAt": 1772506697112,
+  "deletedAt": null
+}
