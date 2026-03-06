@@ -1,0 +1,27 @@
+{
+  "id": "01HWKP1234567890PAGEADR1",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": "01HWKP1234567890PAGEADRR",
+  "type": "adr",
+  "title": "ADR-001: Auth Library Selection",
+  "slug": "adr-001-auth-library",
+  "emoji": "🔐",
+  "status": "accepted",
+  "content": "<h1>ADR-001: Authentication Library Selection</h1>\n<h2>Status</h2>\n<p><strong>Accepted</strong> — Superseded by none.</p>\n<h2>Context</h2>\n<p>We needed to choose an authentication library for the Auth Service. The requirements were:</p>\n<ul>\n<li>Support for JWT with RS256 signing</li>\n<li>Built-in refresh token rotation</li>\n<li>Go-native implementation (no CGO dependencies)</li>\n<li>Active maintenance with security audit history</li>\n</ul>\n<p>We evaluated three options:</p>\n<ol>\n<li><strong>golang-jwt/jwt</strong> — most popular, minimal dependencies</li>\n<li><strong>lestrrat-go/jwx</strong> — full JWK/JWKS support, more complex</li>\n<li><strong>cristalhq/jwt</strong> — zero allocation design, minimal API</li>\n</ol>\n<h2>Decision</h2>\n<p>We chose <strong>golang-jwt/jwt v5</strong> for its balance of simplicity, widespread adoption, and security track record.</p>\n<p>The JWK support from <code>lestrrat-go/jwx</code> is not needed at this stage since we control both issuers and consumers. If we introduce external identity providers (e.g., Cognito, Auth0), we will revisit this decision.</p>\n<h2>Consequences</h2>\n<p><strong>Positive:</strong></p>\n<ul>\n<li>Simple API reduces chance of implementation errors</li>\n<li>Extensive community usage means faster bug detection</li>\n<li>Easy to find examples and audit existing integrations</li>\n</ul>\n<p><strong>Negative:</strong></p>\n<ul>\n<li>Limited JWK/JWKS support may require a library change if we add external IdPs</li>\n<li>No built-in key rotation utilities — we implement our own</li>\n</ul>\n<h2>Alternatives Considered</h2>\n<table>\n<thead>\n<tr>\n<th>Library</th>\n<th>Reason Not Chosen</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>lestrrat-go/jwx</td>\n<td>Over-engineered for our current needs; complex API</td>\n</tr>\n<tr>\n<td>cristalhq/jwt</td>\n<td>Too minimal; lacks community validation</td>\n</tr>\n<tr>\n<td>dgrijalva/jwt-go</td>\n<td>Deprecated, known CVEs</td>\n</tr>\n</tbody></table>\n",
+  "contentText": "ADR-001: Authentication Library Selection \n Status \n  Accepted  — Superseded by none. \n Context \n We needed to choose an authentication library for the Auth Service. The requirements were: \n \n Support for JWT with RS256 signing \n Built-in refresh token rotation \n Go-native implementation (no CGO dependencies) \n Active maintenance with security audit history \n \n We evaluated three options: \n \n  golang-jwt/jwt  — most popular, minimal dependencies \n  lestrrat-go/jwx  — full JWK/JWKS support, more complex \n  cristalhq/jwt  — zero allocation design, minimal API \n \n Decision \n We chose  golang-jwt/jwt v5  for its balance of simplicity, widespread adoption, and security track record. \n The JWK support from  lestrrat-go/jwx  is not needed at this stage since we control both issuers and consumers. If we introduce external identity providers (e.g., Cognito, Auth0), we will revisit this decision. \n Consequences \n  Positive:  \n \n Simple API reduces chance of implementation errors \n Extensive community usage means faster bug detection \n Easy to find examples and audit existing integrations \n \n  Negative:  \n \n Limited JWK/JWKS support may require a library change if we add external IdPs \n No built-in key rotation utilities — we implement our own \n \n Alternatives Considered \n \n \n \n Library \n Reason Not Chosen \n \n \n  \n lestrrat-go/jwx \n Over-engineered for our current needs; complex API \n \n \n cristalhq/jwt \n Too minimal; lacks community validation \n \n \n dgrijalva/jwt-go \n Deprecated, known CVEs",
+  "isPinned": false,
+  "isFavorite": false,
+  "isArchived": false,
+  "position": 0,
+  "depth": 1,
+  "tags": [
+    "architecture",
+    "auth"
+  ],
+  "metadata": {
+    "adrNumber": 1
+  },
+  "createdAt": 1770605897112,
+  "updatedAt": 1771469897112,
+  "deletedAt": null
+}
