@@ -1,0 +1,23 @@
+{
+  "id": "01HWKP1234567890PAGERUN0",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": null,
+  "type": "note",
+  "title": "Runbooks",
+  "slug": "runbooks",
+  "emoji": "📖",
+  "content": "<h1>Runbooks</h1><p>Runbooks are <strong>step-by-step operational guides</strong> for handling incidents, deployments, and maintenance tasks.</p><p>A good runbook:</p><ul><li><p>Has a clear <strong>trigger condition</strong> (\"when to use this\")</p></li><li><p>Lists all <strong>prerequisites</strong> (access, tools, context)</p></li><li><p>Has <strong>numbered steps</strong> with expected outputs</p></li><li><p>Includes a <strong>rollback</strong> section</p></li><li><p>Has been <strong>tested recently</strong> (check the <code spellcheck=\"false\">last_tested</code> date)devos://page/01HWKP1234567890PAGERUN0</p></li></ul><h2>Available Runbooks</h2><table style=\"min-width: 100px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>Runbook</p></th><th colspan=\"1\" rowspan=\"1\"><p>Service</p></th><th colspan=\"1\" rowspan=\"1\"><p>Severity</p></th><th colspan=\"1\" rowspan=\"1\"><p>Last Tested</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"Rotate-JWT-Keys\">Rotate JWT Keys</a></p></td><td colspan=\"1\" rowspan=\"1\"><p>auth-service</p></td><td colspan=\"1\" rowspan=\"1\"><p>P1</p></td><td colspan=\"1\" rowspan=\"1\"><p>2024-03-01</p></td></tr></tbody></table>",
+  "contentText": "Runbooks  Runbooks are  step-by-step operational guides  for handling incidents, deployments, and maintenance tasks.  A good runbook:    Has a clear  trigger condition  (\"when to use this\")    Lists all  prerequisites  (access, tools, context)    Has  numbered steps  with expected outputs    Includes a  rollback  section    Has been  tested recently  (check the  last_tested  date)devos://page/01HWKP1234567890PAGERUN0    Available Runbooks            Runbook    Service    Severity    Last Tested       Rotate JWT Keys     auth-service    P1    2024-03-01",
+  "isPinned": false,
+  "isFavorite": false,
+  "isArchived": false,
+  "position": 3,
+  "depth": 0,
+  "tags": [
+    "operations"
+  ],
+  "metadata": {},
+  "createdAt": 1771037897112,
+  "updatedAt": 1772771466356,
+  "deletedAt": null
+}
