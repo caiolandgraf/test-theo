@@ -1,0 +1,23 @@
+{
+  "id": "01KK0H9RCR7W6VV0WXB1RB0T7A",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAUTH",
+  "parentId": null,
+  "number": 2,
+  "identifier": "AUTH-2",
+  "title": "Fix session invalidation race condition on logout",
+  "status": "todo",
+  "priority": "high",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELBUG",
+    "01HWKP1234567890LABELAUT"
+  ],
+  "estimate": 3,
+  "sortOrder": 1,
+  "metadata": {},
+  "createdAt": 1771901897112,
+  "updatedAt": 1772593097112,
+  "deletedAt": null
+}
