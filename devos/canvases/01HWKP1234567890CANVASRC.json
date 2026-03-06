@@ -1,0 +1,355 @@
+{
+  "id": "01HWKP1234567890CANVASRC",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "pageId": null,
+  "title": "System Architecture",
+  "description": "Auth + API Gateway architecture overview",
+  "viewportX": 0,
+  "viewportY": 0,
+  "viewportZoom": 1,
+  "nodes": [
+    {
+      "id": "CANVAS_NODE_0001",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "shape",
+      "x": 80,
+      "y": 180,
+      "width": 140,
+      "height": 60,
+      "rotation": 0,
+      "zIndex": 1,
+      "label": "Web Client",
+      "style": {
+        "fill": "#1E1E2E",
+        "stroke": "#6366F1",
+        "strokeWidth": 2,
+        "shapeVariant": "rounded-rectangle",
+        "fontColor": "#E8E8E8",
+        "fontSize": 13,
+        "textAlign": "center"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_NODE_0002",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "shape",
+      "x": 320,
+      "y": 180,
+      "width": 160,
+      "height": 60,
+      "rotation": 0,
+      "zIndex": 1,
+      "label": "API Gateway",
+      "style": {
+        "fill": "#1A2A1A",
+        "stroke": "#10B981",
+        "strokeWidth": 2,
+        "shapeVariant": "rounded-rectangle",
+        "fontColor": "#E8E8E8",
+        "fontSize": 13,
+        "textAlign": "center"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_NODE_0003",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "shape",
+      "x": 580,
+      "y": 80,
+      "width": 150,
+      "height": 60,
+      "rotation": 0,
+      "zIndex": 1,
+      "label": "Auth Service",
+      "style": {
+        "fill": "#1E1A2E",
+        "stroke": "#8B5CF6",
+        "strokeWidth": 2,
+        "shapeVariant": "rounded-rectangle",
+        "fontColor": "#E8E8E8",
+        "fontSize": 13,
+        "textAlign": "center"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_NODE_0004",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "shape",
+      "x": 580,
+      "y": 200,
+      "width": 150,
+      "height": 60,
+      "rotation": 0,
+      "zIndex": 1,
+      "label": "User Service",
+      "style": {
+        "fill": "#1A1A2E",
+        "stroke": "#6366F1",
+        "strokeWidth": 2,
+        "shapeVariant": "rounded-rectangle",
+        "fontColor": "#E8E8E8",
+        "fontSize": 13,
+        "textAlign": "center"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_NODE_0005",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "shape",
+      "x": 580,
+      "y": 320,
+      "width": 150,
+      "height": 60,
+      "rotation": 0,
+      "zIndex": 1,
+      "label": "Notification Svc",
+      "style": {
+        "fill": "#1A1A1A",
+        "stroke": "#6B7280",
+        "strokeWidth": 2,
+        "shapeVariant": "rounded-rectangle",
+        "fontColor": "#E8E8E8",
+        "fontSize": 13,
+        "textAlign": "center"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_NODE_0006",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "shape",
+      "x": 820,
+      "y": 80,
+      "width": 130,
+      "height": 60,
+      "rotation": 0,
+      "zIndex": 1,
+      "label": "PostgreSQL",
+      "style": {
+        "fill": "#1A1E2E",
+        "stroke": "#3B82F6",
+        "strokeWidth": 2,
+        "shapeVariant": "cylinder",
+        "fontColor": "#E8E8E8",
+        "fontSize": 13,
+        "textAlign": "center"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_NODE_0007",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "shape",
+      "x": 820,
+      "y": 200,
+      "width": 130,
+      "height": 60,
+      "rotation": 0,
+      "zIndex": 1,
+      "label": "Redis",
+      "style": {
+        "fill": "#2E1A1A",
+        "stroke": "#EF4444",
+        "strokeWidth": 2,
+        "shapeVariant": "cylinder",
+        "fontColor": "#E8E8E8",
+        "fontSize": 13,
+        "textAlign": "center"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_NODE_0008",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "sticky",
+      "x": 300,
+      "y": 350,
+      "width": 200,
+      "height": 100,
+      "rotation": -2,
+      "zIndex": 2,
+      "label": "Rate limiting uses Redis sliding window. See API-1.",
+      "style": {
+        "fill": "#F59E0B",
+        "fontColor": "#1A1A1A",
+        "fontSize": 12,
+        "textAlign": "left",
+        "cornerRadius": 4
+      },
+      "metadata": {},
+      "createdAt": 1772333897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_NODE_0009",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "type": "text",
+      "x": 80,
+      "y": 30,
+      "width": 400,
+      "height": 40,
+      "rotation": 0,
+      "zIndex": 0,
+      "label": "System Architecture — Auth + API Gateway",
+      "style": {
+        "fontColor": "#9CA3AF",
+        "fontSize": 18,
+        "textAlign": "left"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1771901897112
+    }
+  ],
+  "edges": [
+    {
+      "id": "CANVAS_EDGE_0001",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "fromNodeId": "CANVAS_NODE_0001",
+      "toNodeId": "CANVAS_NODE_0002",
+      "fromAnchor": "right",
+      "toAnchor": "left",
+      "label": "HTTPS",
+      "style": {
+        "stroke": "#6B7280",
+        "strokeWidth": 1.5,
+        "arrowEnd": "arrow"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_EDGE_0002",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "fromNodeId": "CANVAS_NODE_0002",
+      "toNodeId": "CANVAS_NODE_0003",
+      "fromAnchor": "right",
+      "toAnchor": "left",
+      "label": "JWT Verify",
+      "style": {
+        "stroke": "#8B5CF6",
+        "strokeWidth": 1.5,
+        "arrowEnd": "arrow",
+        "curved": true
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_EDGE_0003",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "fromNodeId": "CANVAS_NODE_0002",
+      "toNodeId": "CANVAS_NODE_0004",
+      "fromAnchor": "right",
+      "toAnchor": "left",
+      "style": {
+        "stroke": "#6366F1",
+        "strokeWidth": 1.5,
+        "arrowEnd": "arrow"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_EDGE_0004",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "fromNodeId": "CANVAS_NODE_0002",
+      "toNodeId": "CANVAS_NODE_0005",
+      "fromAnchor": "right",
+      "toAnchor": "left",
+      "style": {
+        "stroke": "#6B7280",
+        "strokeWidth": 1.5,
+        "arrowEnd": "arrow",
+        "strokeDash": [
+          4,
+          4
+        ]
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_EDGE_0005",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "fromNodeId": "CANVAS_NODE_0003",
+      "toNodeId": "CANVAS_NODE_0006",
+      "fromAnchor": "right",
+      "toAnchor": "left",
+      "label": "Sessions",
+      "style": {
+        "stroke": "#3B82F6",
+        "strokeWidth": 1.5,
+        "arrowEnd": "arrow"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_EDGE_0006",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "fromNodeId": "CANVAS_NODE_0003",
+      "toNodeId": "CANVAS_NODE_0007",
+      "fromAnchor": "right",
+      "toAnchor": "left",
+      "label": "Rate limit",
+      "style": {
+        "stroke": "#EF4444",
+        "strokeWidth": 1.5,
+        "arrowEnd": "arrow"
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    },
+    {
+      "id": "CANVAS_EDGE_0007",
+      "canvasId": "01HWKP1234567890CANVASRC",
+      "fromNodeId": "CANVAS_NODE_0002",
+      "toNodeId": "CANVAS_NODE_0007",
+      "fromAnchor": "bottom",
+      "toAnchor": "left",
+      "label": "Rate limit",
+      "style": {
+        "stroke": "#EF4444",
+        "strokeWidth": 1.5,
+        "arrowEnd": "arrow",
+        "strokeDash": [
+          6,
+          3
+        ],
+        "curved": true
+      },
+      "metadata": {},
+      "createdAt": 1771901897112,
+      "updatedAt": 1772333897112
+    }
+  ],
+  "metadata": {},
+  "createdAt": 1771901897112,
+  "updatedAt": 1772333897112,
+  "deletedAt": null
+}
