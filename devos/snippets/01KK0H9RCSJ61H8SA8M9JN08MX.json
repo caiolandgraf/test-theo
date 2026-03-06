@@ -1,0 +1,19 @@
+{
+  "id": "01KK0H9RCSJ61H8SA8M9JN08MX",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "title": "OpenTelemetry Span (Go)",
+  "description": "Create a traced span with attributes and error recording",
+  "content": "func (s *Service) ProcessRequest(ctx context.Context, req *Request) (*Response, error) {\n\tctx, span := otel.Tracer(\"auth-service\").Start(ctx, \"ProcessRequest\",\n\t\ttrace.WithAttributes(\n\t\t\tattribute.String(\"request.id\", req.ID),\n\t\t\tattribute.String(\"user.id\", req.UserID),\n\t\t),\n\t)\n\tdefer span.End()\n\n\tresult, err := s.doWork(ctx, req)\n\tif err != nil {\n\t\tspan.RecordError(err)\n\t\tspan.SetStatus(codes.Error, err.Error())\n\t\treturn nil, err\n\t}\n\n\tspan.SetAttributes(attribute.String(\"result.status\", result.Status))\n\tspan.SetStatus(codes.Ok, \"\")\n\treturn result, nil\n}",
+  "language": "go",
+  "tags": [
+    "observability",
+    "opentelemetry",
+    "tracing",
+    "go"
+  ],
+  "isFavorite": false,
+  "usageCount": 3,
+  "createdAt": 1771210697112,
+  "updatedAt": 1771210697112,
+  "deletedAt": null
+}
