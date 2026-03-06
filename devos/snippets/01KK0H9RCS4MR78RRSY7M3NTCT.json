@@ -1,0 +1,18 @@
+{
+  "id": "01KK0H9RCS4MR78RRSY7M3NTCT",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "title": "Kubernetes Health Check Probe",
+  "description": "Standard liveness and readiness probe configuration",
+  "content": "livenessProbe:\n  httpGet:\n    path: /healthz/live\n    port: 8080\n  initialDelaySeconds: 15\n  periodSeconds: 10\n  failureThreshold: 3\n  timeoutSeconds: 5\n\nreadinessProbe:\n  httpGet:\n    path: /healthz/ready\n    port: 8080\n  initialDelaySeconds: 5\n  periodSeconds: 5\n  failureThreshold: 3\n  timeoutSeconds: 3\n\nstartupProbe:\n  httpGet:\n    path: /healthz/startup\n    port: 8080\n  failureThreshold: 30\n  periodSeconds: 10",
+  "language": "yaml",
+  "tags": [
+    "kubernetes",
+    "devops",
+    "health-check"
+  ],
+  "isFavorite": false,
+  "usageCount": 4,
+  "createdAt": 1770605897112,
+  "updatedAt": 1770605897112,
+  "deletedAt": null
+}
