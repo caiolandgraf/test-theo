@@ -1,0 +1,18 @@
+{
+  "id": "01HWKP1234567890PROJAUTH",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "name": "Auth Service",
+  "identifier": "AUTH",
+  "description": "Authentication & authorization microservice",
+  "status": "active",
+  "color": "#6366F1",
+  "iconEmoji": "🔐",
+  "pageId": null,
+  "leadId": null,
+  "startDate": 1767581897112,
+  "targetDate": 1775357897112,
+  "metadata": {},
+  "createdAt": 1767581897112,
+  "updatedAt": 1772593097112,
+  "deletedAt": null
+}
