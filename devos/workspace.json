@@ -1,0 +1,15 @@
+{
+  "workspace": {
+    "id": "01HWKP1234567890WORKSPACE",
+    "name": "My Workspace",
+    "slug": "my-workspace-asd",
+    "description": "Personal developer workspace — notes, issues, and diagrams",
+    "iconEmoji": "⚡",
+    "color": "#6B7280",
+    "createdAt": 1770173897112,
+    "updatedAt": 1772771340428
+  },
+  "settings": {
+    "first_run": false
+  }
+}
