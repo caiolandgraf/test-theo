@@ -1,0 +1,23 @@
+{
+  "id": "01KK0H9RCRKRS2A8N4E766FE0D",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAUTH",
+  "parentId": null,
+  "number": 5,
+  "identifier": "AUTH-5",
+  "title": "Write integration tests for OAuth2 PKCE flow",
+  "status": "todo",
+  "priority": "medium",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELCHR",
+    "01HWKP1234567890LABELAUT"
+  ],
+  "estimate": 2,
+  "sortOrder": 4,
+  "metadata": {},
+  "createdAt": 1772247497112,
+  "updatedAt": 1772247497112,
+  "deletedAt": null
+}
