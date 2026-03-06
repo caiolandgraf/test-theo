@@ -1,0 +1,23 @@
+{
+  "id": "01KK0H9RCSJ6XH31XYYSC39FC2",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAPI_",
+  "parentId": null,
+  "number": 3,
+  "identifier": "API-3",
+  "title": "Document all v2 endpoints in OpenAPI 3.1",
+  "status": "done",
+  "priority": "medium",
+  "assigneeId": null,
+  "pageId": "01HWKP1234567890PAGEAPI0",
+  "labelIds": [
+    "01HWKP1234567890LABELDOC"
+  ],
+  "estimate": 3,
+  "sortOrder": 2,
+  "metadata": {},
+  "createdAt": 1772161097112,
+  "updatedAt": 1772774521927,
+  "deletedAt": null,
+  "completedAt": 1772774521927
+}
