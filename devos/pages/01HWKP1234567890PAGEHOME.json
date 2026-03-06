@@ -1,0 +1,21 @@
+{
+  "id": "01HWKP1234567890PAGEHOME",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": null,
+  "type": "note",
+  "title": "Home",
+  "slug": "home",
+  "emoji": "🏠",
+  "content": "<h1>Welcome to Theo ⚡</h1>\n<blockquote>\n<p>Your local-first, keyboard-native developer workspace.</p>\n</blockquote>\n<p>This is your workspace home. Everything lives here — notes, decisions, runbooks, API docs, and issues.</p>\n<h2>Quick Links</h2>\n<ul>\n<li>[[ADRs]] — Architecture Decision Records</li>\n<li>[[RFCs]] — Request for Comments</li>\n<li>[[Runbooks]] — Operational guides</li>\n<li>[[API Documentation]] — Service endpoints</li>\n</ul>\n<h2>Getting Started</h2>\n<p>Press <code>⌘K</code> to open the command palette and navigate to anything instantly.</p>\n<p>Use <code>⌘P</code> to fuzzy-search pages. Use <code>⌘I</code> to jump to an issue.</p>\n<h2>Recent Activity</h2>\n<p>Everything you need to pick up where you left off is in the sidebar under <strong>Recents</strong>.</p>\n<hr>\n<p><em>&quot;The best tool is the one that gets out of your way.&quot;</em></p>\n",
+  "contentText": "Welcome to Theo ⚡ \n \n Your local-first, keyboard-native developer workspace. \n \n This is your workspace home. Everything lives here — notes, decisions, runbooks, API docs, and issues. \n Quick Links \n \n [[ADRs]] — Architecture Decision Records \n [[RFCs]] — Request for Comments \n [[Runbooks]] — Operational guides \n [[API Documentation]] — Service endpoints \n \n Getting Started \n Press  ⌘K  to open the command palette and navigate to anything instantly. \n Use  ⌘P  to fuzzy-search pages. Use  ⌘I  to jump to an issue. \n Recent Activity \n Everything you need to pick up where you left off is in the sidebar under  Recents . \n \n  &quot;The best tool is the one that gets out of your way.&quot;",
+  "isPinned": true,
+  "isFavorite": false,
+  "isArchived": false,
+  "position": 0,
+  "depth": 0,
+  "tags": [],
+  "metadata": {},
+  "createdAt": 1770173897112,
+  "updatedAt": 1772765897112,
+  "deletedAt": 1772765916765
+}
