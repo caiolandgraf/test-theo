@@ -1,0 +1,18 @@
+{
+  "id": "01KK0H9RCS2PS1KHD49MNJ3Y63",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "title": "Sliding Window Rate Limiter (Redis + Go)",
+  "description": "Redis-backed sliding window rate limiter using sorted sets",
+  "content": "func (r *RateLimiter) Allow(ctx context.Context, key string, limit int, window time.Duration) (bool, error) {\n\tnow := time.Now().UnixMilli()\n\twindowStart := now - window.Milliseconds()\n\n\tpipe := r.redis.Pipeline()\n\n\t// Remove expired entries\n\tpipe.ZRemRangeByScore(ctx, key, \"0\", strconv.FormatInt(windowStart, 10))\n\n\t// Count current requests\n\tcountCmd := pipe.ZCard(ctx, key)\n\n\t// Add current request\n\tpipe.ZAdd(ctx, key, redis.Z{Score: float64(now), Member: now})\n\n\t// Set TTL\n\tpipe.Expire(ctx, key, window)\n\n\tif _, err := pipe.Exec(ctx); err != nil {\n\t\treturn false, fmt.Errorf(\"rate limiter pipeline error: %w\", err)\n\t}\n\n\treturn countCmd.Val() < int64(limit), nil\n}",
+  "language": "go",
+  "tags": [
+    "redis",
+    "rate-limiting",
+    "go"
+  ],
+  "isFavorite": false,
+  "usageCount": 7,
+  "createdAt": 1771469897112,
+  "updatedAt": 1772074697112,
+  "deletedAt": null
+}
