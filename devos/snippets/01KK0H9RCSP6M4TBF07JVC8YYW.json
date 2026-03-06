@@ -1,0 +1,18 @@
+{
+  "id": "01KK0H9RCSP6M4TBF07JVC8YYW",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "title": "JWT Decode (Go)",
+  "description": "Parse and validate a JWT access token using golang-jwt/jwt v5",
+  "content": "func ParseAccessToken(tokenString string, publicKey *rsa.PublicKey) (*Claims, error) {\n\ttoken, err := jwt.ParseWithClaims(\n\t\ttokenString,\n\t\t&Claims{},\n\t\tfunc(token *jwt.Token) (interface{}, error) {\n\t\t\tif _, ok := token.Method.(*jwt.SigningMethodRSA); !ok {\n\t\t\t\treturn nil, fmt.Errorf(\"unexpected signing method: %v\", token.Header[\"alg\"])\n\t\t\t}\n\t\t\treturn publicKey, nil\n\t\t},\n\t\tjwt.WithExpirationRequired(),\n\t\tjwt.WithIssuedAt(),\n\t)\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"invalid token: %w\", err)\n\t}\n\n\tclaims, ok := token.Claims.(*Claims)\n\tif !ok || !token.Valid {\n\t\treturn nil, errors.New(\"invalid token claims\")\n\t}\n\n\treturn claims, nil\n}",
+  "language": "go",
+  "tags": [
+    "auth",
+    "jwt",
+    "go"
+  ],
+  "isFavorite": true,
+  "usageCount": 12,
+  "createdAt": 1771037897112,
+  "updatedAt": 1772333897112,
+  "deletedAt": null
+}
