@@ -1,0 +1,23 @@
+{
+  "id": "01HWKP1234567890PAGEADRR",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": null,
+  "type": "note",
+  "title": "ADRs",
+  "slug": "adrs",
+  "emoji": "📋",
+  "content": "<h1>Architecture Decision Records</h1><p>An <strong>Architecture Decision Record (ADR)</strong> captures a significant architectural decision, its context, and its consequences.</p><p></p><p></p><p>Active ADRs</p><table style=\"min-width: 100px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>#</p></th><th colspan=\"1\" rowspan=\"1\"><p>Title</p></th><th colspan=\"1\" rowspan=\"1\"><p>Status</p></th><th colspan=\"1\" rowspan=\"1\"><p>Date</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"ADR-001\">ADR-001</a></p></td><td colspan=\"1\" rowspan=\"1\"><p>Authentication Library Selection</p></td><td colspan=\"1\" rowspan=\"1\"><p>Accepted</p></td><td colspan=\"1\" rowspan=\"1\"><p>2024-03-01</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"ADR-002\">ADR-002</a></p></td><td colspan=\"1\" rowspan=\"1\"><p>Event Sourcing for Audit Log</p></td><td colspan=\"1\" rowspan=\"1\"><p>Accepted</p></td><td colspan=\"1\" rowspan=\"1\"><p>2024-03-15</p></td></tr></tbody></table><h2>Creating a New ADR</h2><p>Use <code spellcheck=\"false\">⌘K → new adr</code> to create a new ADR from the template.</p><p>ADRs should be written <strong>at the time of the decision</strong> — not after. The goal is to capture <em>why</em> a decision was made, not just <em>what</em> was decided.</p>",
+  "contentText": "Architecture Decision Records  An  Architecture Decision Record (ADR)  captures a significant architectural decision, its context, and its consequences.      Active ADRs            #    Title    Status    Date       ADR-001     Authentication Library Selection    Accepted    2024-03-01       ADR-002     Event Sourcing for Audit Log    Accepted    2024-03-15      Creating a New ADR  Use  ⌘K → new adr  to create a new ADR from the template.  ADRs should be written  at the time of the decision  — not after. The goal is to capture  why  a decision was made, not just  what  was decided.",
+  "isPinned": false,
+  "isFavorite": false,
+  "isArchived": false,
+  "position": 1,
+  "depth": 0,
+  "tags": [
+    "architecture"
+  ],
+  "metadata": {},
+  "createdAt": 1770605897112,
+  "updatedAt": 1772771276094,
+  "deletedAt": null
+}
