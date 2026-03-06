@@ -1,0 +1,24 @@
+{
+  "id": "01KK0H9RCRG3514B21736MZYNY",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAUTH",
+  "parentId": null,
+  "number": 1,
+  "identifier": "AUTH-1",
+  "title": "Implement JWT refresh token rotation",
+  "status": "in-progress",
+  "priority": "urgent",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELFET",
+    "01HWKP1234567890LABELAUT"
+  ],
+  "estimate": 5,
+  "dueDate": 1773370697112,
+  "sortOrder": 0,
+  "metadata": {},
+  "createdAt": 1771556297112,
+  "updatedAt": 1772679497112,
+  "deletedAt": null
+}
