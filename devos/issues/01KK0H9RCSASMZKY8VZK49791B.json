@@ -1,0 +1,22 @@
+{
+  "id": "01KK0H9RCSASMZKY8VZK49791B",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAPI_",
+  "parentId": null,
+  "number": 2,
+  "identifier": "API-2",
+  "title": "Add request tracing with OpenTelemetry",
+  "status": "in-progress",
+  "priority": "medium",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELFET"
+  ],
+  "estimate": 5,
+  "sortOrder": 1,
+  "metadata": {},
+  "createdAt": 1771988297112,
+  "updatedAt": 1772774487362,
+  "deletedAt": null
+}
