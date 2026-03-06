@@ -1,0 +1,24 @@
+{
+  "id": "01KK0H9RCRBCZW0GQG5TP73TWA",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAUTH",
+  "parentId": null,
+  "number": 6,
+  "identifier": "AUTH-6",
+  "title": "Migrate bcrypt to argon2id for password hashing",
+  "status": "done",
+  "priority": "high",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELCHR",
+    "01HWKP1234567890LABELAUT"
+  ],
+  "estimate": 2,
+  "completedAt": 1772506697112,
+  "sortOrder": 5,
+  "metadata": {},
+  "createdAt": 1771469897112,
+  "updatedAt": 1772506697112,
+  "deletedAt": null
+}
