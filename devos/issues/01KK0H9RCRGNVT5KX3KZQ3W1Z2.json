@@ -1,0 +1,22 @@
+{
+  "id": "01KK0H9RCRGNVT5KX3KZQ3W1Z2",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAPI_",
+  "parentId": null,
+  "number": 1,
+  "identifier": "API-1",
+  "title": "Implement rate limiting per API key (sliding window)",
+  "status": "in-progress",
+  "priority": "high",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELFET"
+  ],
+  "estimate": 5,
+  "sortOrder": 0,
+  "metadata": {},
+  "createdAt": 1771729097112,
+  "updatedAt": 1772593097112,
+  "deletedAt": null
+}
