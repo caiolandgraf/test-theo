@@ -1,0 +1,27 @@
+{
+  "id": "01HWKP1234567890PAGEADR2",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": "01HWKP1234567890PAGEADRR",
+  "type": "adr",
+  "title": "ADR-002: Event Sourcing for Audit Log",
+  "slug": "adr-002-event-sourcing",
+  "emoji": "📊",
+  "status": "accepted",
+  "content": "<h1>ADR-002: Event Sourcing for Audit Log</h1>\n<h2>Status</h2>\n<p><strong>Accepted</strong></p>\n<h2>Context</h2>\n<p>The Auth Service handles sensitive operations: logins, logouts, token issuances, permission changes, and account lockouts. Compliance requirements (SOC2, GDPR) require a tamper-evident audit trail.</p>\n<p>Options considered:</p>\n<ol>\n<li><strong>Append-only SQL table</strong> — simplest, no ordering guarantees</li>\n<li><strong>Event sourcing with Kafka</strong> — high operational overhead</li>\n<li><strong>Event sourcing with Postgres WAL + logical decoding</strong> — complex setup</li>\n<li><strong>Immutable event log table with ULID ordering</strong> — simple, correct, fast</li>\n</ol>\n<h2>Decision</h2>\n<p>Use an <strong>immutable append-only events table</strong> in Postgres with ULID primary keys. No events are ever updated or deleted. A separate process compresses old events into snapshots after 90 days.</p>\n<p>This gives us:</p>\n<ul>\n<li>Total ordering via ULID (time-sortable, monotonic)</li>\n<li>Tamper evidence via sequential integrity checks</li>\n<li>Simple query model (no projection needed for audit)</li>\n<li>Zero operational overhead compared to Kafka</li>\n</ul>\n<h2>Consequences</h2>\n<p><strong>Positive:</strong></p>\n<ul>\n<li>Simple to implement and audit</li>\n<li>No additional infrastructure</li>\n<li>Full history of every auth event forever (with 90-day compression)</li>\n</ul>\n<p><strong>Negative:</strong></p>\n<ul>\n<li>Not suitable for read-model projections at scale (not a problem for audit use)</li>\n<li>Compression step must be carefully tested to avoid data loss</li>\n</ul>\n",
+  "contentText": "ADR-002: Event Sourcing for Audit Log \n Status \n  Accepted  \n Context \n The Auth Service handles sensitive operations: logins, logouts, token issuances, permission changes, and account lockouts. Compliance requirements (SOC2, GDPR) require a tamper-evident audit trail. \n Options considered: \n \n  Append-only SQL table  — simplest, no ordering guarantees \n  Event sourcing with Kafka  — high operational overhead \n  Event sourcing with Postgres WAL + logical decoding  — complex setup \n  Immutable event log table with ULID ordering  — simple, correct, fast \n \n Decision \n Use an  immutable append-only events table  in Postgres with ULID primary keys. No events are ever updated or deleted. A separate process compresses old events into snapshots after 90 days. \n This gives us: \n \n Total ordering via ULID (time-sortable, monotonic) \n Tamper evidence via sequential integrity checks \n Simple query model (no projection needed for audit) \n Zero operational overhead compared to Kafka \n \n Consequences \n  Positive:  \n \n Simple to implement and audit \n No additional infrastructure \n Full history of every auth event forever (with 90-day compression) \n \n  Negative:  \n \n Not suitable for read-model projections at scale (not a problem for audit use) \n Compression step must be carefully tested to avoid data loss",
+  "isPinned": false,
+  "isFavorite": false,
+  "isArchived": false,
+  "position": 1,
+  "depth": 1,
+  "tags": [
+    "architecture",
+    "database"
+  ],
+  "metadata": {
+    "adrNumber": 2
+  },
+  "createdAt": 1771469897112,
+  "updatedAt": 1771901897112,
+  "deletedAt": null
+}
