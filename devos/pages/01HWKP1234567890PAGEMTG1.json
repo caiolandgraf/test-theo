@@ -1,0 +1,23 @@
+{
+  "id": "01HWKP1234567890PAGEMTG1",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": null,
+  "type": "meeting",
+  "title": "Architecture Sync — 2024-03-20",
+  "slug": "arch-sync-2024-03-20",
+  "emoji": "🗓️",
+  "content": "<h1>Architecture Sync — 2024-03-20</h1>\n<p><strong>Attendees:</strong> Engineering team</p>\n<p><strong>Agenda:</strong></p>\n<ol>\n<li>JWT rotation RFC review</li>\n<li>ADR-002 status update</li>\n<li>API Gateway rate limiting design</li>\n</ol>\n<hr>\n<h2>Notes</h2>\n<h3>JWT Rotation</h3>\n<p>RFC-001 was approved. Implementation starts this sprint (AUTH-1).</p>\n<p>Key decisions:</p>\n<ul>\n<li>15-minute access token lifetime ✅</li>\n<li>7-day refresh token in HttpOnly cookie ✅</li>\n<li>30-second grace window for concurrent requests ✅</li>\n</ul>\n<p><strong>Action item:</strong> @you to start implementation by EOW.</p>\n<h3>Event Sourcing</h3>\n<p>ADR-002 approved. ULID-based append-only events table.</p>\n<p>Compression job design still needed — assigned to INFRA team.</p>\n<h3>Rate Limiting</h3>\n<p>Sliding window algorithm chosen over token bucket for more predictable behavior under burst load.</p>\n<p>Redis sorted sets for the sliding window implementation.</p>\n<p><strong>Action item:</strong> API-1 to be started next sprint.</p>\n<hr>\n<h2>Decisions</h2>\n<ul>\n<li><input disabled=\"\" type=\"checkbox\"> AUTH-1 implementation review by 2024-03-27</li>\n<li><input disabled=\"\" type=\"checkbox\"> Schedule load testing for rate limiter before release</li>\n</ul>\n",
+  "contentText": "Architecture Sync — 2024-03-20 \n  Attendees:  Engineering team \n  Agenda:  \n \n JWT rotation RFC review \n ADR-002 status update \n API Gateway rate limiting design \n \n \n Notes \n JWT Rotation \n RFC-001 was approved. Implementation starts this sprint (AUTH-1). \n Key decisions: \n \n 15-minute access token lifetime ✅ \n 7-day refresh token in HttpOnly cookie ✅ \n 30-second grace window for concurrent requests ✅ \n \n  Action item:  @you to start implementation by EOW. \n Event Sourcing \n ADR-002 approved. ULID-based append-only events table. \n Compression job design still needed — assigned to INFRA team. \n Rate Limiting \n Sliding window algorithm chosen over token bucket for more predictable behavior under burst load. \n Redis sorted sets for the sliding window implementation. \n  Action item:  API-1 to be started next sprint. \n \n Decisions \n \n   AUTH-1 implementation review by 2024-03-27 \n   Schedule load testing for rate limiter before release",
+  "isPinned": false,
+  "isFavorite": false,
+  "isArchived": false,
+  "position": 5,
+  "depth": 0,
+  "tags": [
+    "meeting"
+  ],
+  "metadata": {},
+  "createdAt": 1771815497112,
+  "updatedAt": 1771815497112,
+  "deletedAt": null
+}
