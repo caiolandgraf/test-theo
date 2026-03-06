@@ -1,0 +1,22 @@
+{
+  "id": "01KK0H9RCSXZ7DR60S9GVJMYXQ",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJINFR",
+  "parentId": null,
+  "number": 2,
+  "identifier": "INFRA-2",
+  "title": "Configure Grafana dashboards for all services",
+  "status": "in-progress",
+  "priority": "medium",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELCHR"
+  ],
+  "estimate": 5,
+  "sortOrder": 1,
+  "metadata": {},
+  "createdAt": 1771037897112,
+  "updatedAt": 1772593097112,
+  "deletedAt": null
+}
