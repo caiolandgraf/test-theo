@@ -1,0 +1,44 @@
+[
+  {
+    "id": "01HWKP1234567890LABELAUT",
+    "workspaceId": "01HWKP1234567890WORKSPACE",
+    "name": "auth",
+    "color": "#8B5CF6",
+    "description": "Authentication / authorization related"
+  },
+  {
+    "id": "01HWKP1234567890LABELBUG",
+    "workspaceId": "01HWKP1234567890WORKSPACE",
+    "name": "bug",
+    "color": "#EF4444",
+    "description": "Something is broken"
+  },
+  {
+    "id": "01HWKP1234567890LABELCHR",
+    "workspaceId": "01HWKP1234567890WORKSPACE",
+    "name": "chore",
+    "color": "#6B7280",
+    "description": "Maintenance, refactoring, cleanup"
+  },
+  {
+    "id": "01HWKP1234567890LABELDOC",
+    "workspaceId": "01HWKP1234567890WORKSPACE",
+    "name": "docs",
+    "color": "#10B981",
+    "description": "Documentation"
+  },
+  {
+    "id": "01HWKP1234567890LABELFET",
+    "workspaceId": "01HWKP1234567890WORKSPACE",
+    "name": "feature",
+    "color": "#6366F1",
+    "description": "New functionality"
+  },
+  {
+    "id": "01HWKP1234567890LABELPRF",
+    "workspaceId": "01HWKP1234567890WORKSPACE",
+    "name": "performance",
+    "color": "#F59E0B",
+    "description": "Performance improvement"
+  }
+]
