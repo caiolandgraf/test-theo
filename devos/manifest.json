@@ -73,5 +73,40 @@
     "sha": "f014320c588dc7cb99ed97427d8b7d085af182993bccbbdb133ce460c2ea817f",
     "updatedAt": 1772333897112,
     "path": "devos/canvases/01HWKP1234567890CANVASRC.json"
+  },
+  "devos/labels.json": {
+    "sha": "c637689ddf49329558936004af45442b7e3eb752d0a8b98fc11c1addd16c9b3d",
+    "updatedAt": 1772817956199,
+    "path": "devos/labels.json"
+  },
+  "devos/pages/01HWKP1234567890PAGEHOME.json": {
+    "sha": "82cc29206efc61fdddf5b289115a59723942b0ca398cfabf37d8e954f96f14f3",
+    "updatedAt": 1772765897112,
+    "path": "devos/pages/01HWKP1234567890PAGEHOME.json"
+  },
+  "devos/pages/01KK0HE43RZXYEW4BA81JN2HTV.json": {
+    "sha": "e7d0d5ce6d92eacad0c296f69f267b06d84f69e0814beedeeba3336a4fd359c8",
+    "updatedAt": 1772766040184,
+    "path": "devos/pages/01KK0HE43RZXYEW4BA81JN2HTV.json"
+  },
+  "devos/pages/01KK0HXCYNG23Z0ZRYJ369NQ9N.json": {
+    "sha": "0182fbb050e8b137518b41da6c1bbbc0ca15eb923ad0f01ee17aff222da21653",
+    "updatedAt": 1772766540757,
+    "path": "devos/pages/01KK0HXCYNG23Z0ZRYJ369NQ9N.json"
+  },
+  "devos/issues/01KK0H9RCRYNFP9BNP40Z7CRAM.json": {
+    "sha": "b1471d9ede517b893469e28db6cb0631f063e241359f4629152abc37d47dd9a4",
+    "updatedAt": 1772679497112,
+    "path": "devos/issues/01KK0H9RCRYNFP9BNP40Z7CRAM.json"
+  },
+  "devos/issues/01KK0H9RCSB98D6Z63MW1T3CEA.json": {
+    "sha": "54b9bb5e82ce764a65d6bafe1efdcfc6954fb0e9e309d7d3cfdf01c0448b90a5",
+    "updatedAt": 1772679497112,
+    "path": "devos/issues/01KK0H9RCSB98D6Z63MW1T3CEA.json"
+  },
+  "devos/snippets/01KK0H9RCSJ61H8SA8M9JN08MX.json": {
+    "sha": "bec2188cc836e14718301b704aa3167b4661f2e83ff17abac4e3bf6022c4b4d6",
+    "updatedAt": 1771210697112,
+    "path": "devos/snippets/01KK0H9RCSJ61H8SA8M9JN08MX.json"
   }
 }
