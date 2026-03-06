@@ -1,0 +1,30 @@
+{
+  "id": "01HWKP1234567890PAGERFC1",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "parentId": "01HWKP1234567890PAGERFC0",
+  "type": "rfc",
+  "title": "RFC-001: JWT Token Rotation Strategy",
+  "slug": "rfc-001-jwt-rotation",
+  "emoji": "🔄",
+  "status": "final",
+  "content": "<h1>RFC-001: JWT Token Rotation Strategy</h1>\n<h2>Summary</h2>\n<p>This RFC proposes a <strong>sliding-window refresh token rotation</strong> strategy for the Auth Service to balance security with user experience.</p>\n<h2>Motivation</h2>\n<p>Our current implementation issues long-lived access tokens (24h) with no rotation. This is a security risk: a stolen token is valid for up to 24 hours with no mechanism to revoke it short of rotating the signing key globally.</p>\n<p>We need a strategy that:</p>\n<ol>\n<li>Limits the blast radius of a stolen token</li>\n<li>Does not force users to re-authenticate frequently</li>\n<li>Works correctly in concurrent tab/device scenarios</li>\n</ol>\n<h2>Detailed Design</h2>\n<h3>Token Lifetimes</h3>\n<table>\n<thead>\n<tr>\n<th>Token Type</th>\n<th>Lifetime</th>\n<th>Storage</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Access token</td>\n<td>15 minutes</td>\n<td>Memory only (no localStorage)</td>\n</tr>\n<tr>\n<td>Refresh token</td>\n<td>7 days</td>\n<td>HttpOnly Secure cookie</td>\n</tr>\n</tbody></table>\n<h3>Rotation Protocol</h3>\n<ol>\n<li>Client receives <code>access_token</code> (15m) + <code>refresh_token</code> (7d) on login</li>\n<li>When <code>access_token</code> expires, client calls <code>POST /auth/refresh</code></li>\n<li>Server validates <code>refresh_token</code>, issues <strong>new</strong> <code>access_token</code> + <strong>new</strong> <code>refresh_token</code></li>\n<li>Old <code>refresh_token</code> is <strong>immediately invalidated</strong> (single-use)</li>\n<li>If old <code>refresh_token</code> is used again → <strong>security event</strong>, invalidate entire session family</li>\n</ol>\n<h3>Concurrency Handling</h3>\n<p>A 30-second grace window allows concurrent requests to use the old refresh token. All requests within the grace window receive the same new token pair.</p>\n<pre><code>         t=0          t=15m          t=15m+30s\nclient:   ──── access ─────|── refresh ──|── invalid ──▶\nserver:                    │             │\n                     new tokens      old token\n                      issued         rejected\n</code></pre>\n<h2>Drawbacks</h2>\n<ul>\n<li>Additional database write on every refresh (but amortized over 15m windows)</li>\n<li>Grace window introduces a small reuse window (acceptable trade-off)</li>\n</ul>\n<h2>Alternatives</h2>\n<p><strong>Long-lived access tokens (current):</strong> Simple but unacceptable security posture.</p>\n<p><strong>Short-lived access tokens without refresh:</strong> Forces frequent re-auth, bad UX.</p>\n<p><strong>Opaque tokens + central validation:</strong> Good security but adds latency on every request (cache helps but adds complexity).</p>\n<h2>Unresolved Questions</h2>\n<ul>\n<li>Should we implement token families for device tracking? (Proposed: v2)</li>\n<li>Cross-device logout: should revoking one device revoke all? (Proposed: opt-in setting)</li>\n</ul>\n",
+  "contentText": "RFC-001: JWT Token Rotation Strategy \n Summary \n This RFC proposes a  sliding-window refresh token rotation  strategy for the Auth Service to balance security with user experience. \n Motivation \n Our current implementation issues long-lived access tokens (24h) with no rotation. This is a security risk: a stolen token is valid for up to 24 hours with no mechanism to revoke it short of rotating the signing key globally. \n We need a strategy that: \n \n Limits the blast radius of a stolen token \n Does not force users to re-authenticate frequently \n Works correctly in concurrent tab/device scenarios \n \n Detailed Design \n Token Lifetimes \n \n \n \n Token Type \n Lifetime \n Storage \n \n \n  \n Access token \n 15 minutes \n Memory only (no localStorage) \n \n \n Refresh token \n 7 days \n HttpOnly Secure cookie \n \n  \n Rotation Protocol \n \n Client receives  access_token  (15m) +  refresh_token  (7d) on login \n When  access_token  expires, client calls  POST /auth/refresh  \n Server validates  refresh_token , issues  new   access_token  +  new   refresh_token  \n Old  refresh_token  is  immediately invalidated  (single-use) \n If old  refresh_token  is used again →  security event , invalidate entire session family \n \n Concurrency Handling \n A 30-second grace window allows concurrent requests to use the old refresh token. All requests within the grace window receive the same new token pair. \n           t=0          t=15m          t=15m+30s\nclient:   ──── access ─────|── refresh ──|── invalid ──▶\nserver:                    │             │\n                     new tokens      old token\n                      issued         rejected\n  \n Drawbacks \n \n Additional database write on every refresh (but amortized over 15m windows) \n Grace window introduces a small reuse window (acceptable trade-off) \n \n Alternatives \n  Long-lived access tokens (current):  Simple but unacceptable security posture. \n  Short-lived access tokens without refresh:  Forces frequent re-auth, bad UX. \n  Opaque tokens + central validation:  Good security but adds latency on every request (cache helps but adds complexity). \n Unresolved Questions \n \n Should we implement token families for device tracking? (Proposed: v2) \n Cross-device logout: should revoking one device revoke all? (Proposed: opt-in setting)",
+  "isPinned": false,
+  "isFavorite": true,
+  "isArchived": false,
+  "position": 0,
+  "depth": 1,
+  "tags": [
+    "auth",
+    "security"
+  ],
+  "metadata": {
+    "rfcNumber": 1,
+    "authors": [
+      "you"
+    ]
+  },
+  "createdAt": 1771210697112,
+  "updatedAt": 1772074697112,
+  "deletedAt": null
+}
