@@ -1,0 +1,23 @@
+{
+  "id": "01KK0H9RCRY666X7G2GH4RTNP6",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJAUTH",
+  "parentId": null,
+  "number": 3,
+  "identifier": "AUTH-3",
+  "title": "Add passkey (WebAuthn) support",
+  "status": "backlog",
+  "priority": "high",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELFET",
+    "01HWKP1234567890LABELAUT"
+  ],
+  "estimate": 13,
+  "sortOrder": 2,
+  "metadata": {},
+  "createdAt": 1771037897112,
+  "updatedAt": 1772333897112,
+  "deletedAt": null
+}
