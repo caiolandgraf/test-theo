@@ -1,0 +1,18 @@
+{
+  "id": "01KK0H9RCS4F55NZ1MC0DS6DRB",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "title": "useDebounce Hook (TypeScript)",
+  "description": "React hook for debouncing a value — useful for search inputs",
+  "content": "import { useEffect, useState } from 'react'\n\nexport function useDebounce<T>(value: T, delayMs: number): T {\n  const [debouncedValue, setDebouncedValue] = useState<T>(value)\n\n  useEffect(() => {\n    const timer = setTimeout(() => {\n      setDebouncedValue(value)\n    }, delayMs)\n\n    return () => {\n      clearTimeout(timer)\n    }\n  }, [value, delayMs])\n\n  return debouncedValue\n}\n\n// Usage:\n// const debouncedSearch = useDebounce(searchQuery, 300)",
+  "language": "typescript",
+  "tags": [
+    "react",
+    "hooks",
+    "typescript"
+  ],
+  "isFavorite": true,
+  "usageCount": 23,
+  "createdAt": 1770173897112,
+  "updatedAt": 1771901897112,
+  "deletedAt": null
+}
