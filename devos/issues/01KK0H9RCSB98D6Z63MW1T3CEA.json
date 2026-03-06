@@ -1,0 +1,22 @@
+{
+  "id": "01KK0H9RCSB98D6Z63MW1T3CEA",
+  "workspaceId": "01HWKP1234567890WORKSPACE",
+  "projectId": "01HWKP1234567890PROJINFR",
+  "parentId": null,
+  "number": 3,
+  "identifier": "INFRA-3",
+  "title": "P95 latency alert not firing when Redis is down",
+  "status": "todo",
+  "priority": "high",
+  "assigneeId": null,
+  "pageId": null,
+  "labelIds": [
+    "01HWKP1234567890LABELBUG"
+  ],
+  "estimate": 2,
+  "sortOrder": 2,
+  "metadata": {},
+  "createdAt": 1772420297112,
+  "updatedAt": 1772679497112,
+  "deletedAt": null
+}
